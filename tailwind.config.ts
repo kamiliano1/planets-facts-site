@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -14,6 +15,16 @@ const config: Config = {
       },
     },
     colors: {
+      dots: {
+        mercury: "hsl(196, 83%, 93%)",
+        venus: "hsl(39, 88%, 73%)",
+        earth: "hsl(238, 99%, 66%)",
+        mars: "hsl(12, 100%, 64%)",
+        jupiter: "hsl(27, 75%, 70%)",
+        saturn: "hsl(40, 96%, 70%)",
+        uranus: "hsl(168, 82%, 67%)",
+        neptune: "hsl(222, 95%, 63%)",
+      },
       FFFFF: "hsl(0, 0%, 100%)",
       "070724": "hsl(240, 67%, 8%)",
       "38384F": "hsl(240, 17%, 26%)",
@@ -108,6 +119,14 @@ const config: Config = {
           letterSpacing: ".727px",
         },
       ],
+      H4Mobile: [
+        ".9375rem",
+        {
+          fontWeight: "700",
+          lineHeight: "1.5625rem",
+          letterSpacing: "1.364px",
+        },
+      ],
       BodyDesktop: [
         ".875rem",
         {
@@ -120,6 +139,13 @@ const config: Config = {
         {
           fontWeight: "400",
           lineHeight: "1.375rem",
+        },
+      ],
+      NavTitle: [
+        "1.75rem",
+        {
+          fontWeight: "400",
+          letterSpacing: "-1.05px",
         },
       ],
     },

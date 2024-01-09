@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${antonio.variable} ${spartan.variable} text-EDA249`}>
+      <body className={`${antonio.variable} ${spartan.variable} text-FFFFF`}>
         <Navbar />
         {children}
       </body>
