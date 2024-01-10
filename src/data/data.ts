@@ -1,6 +1,7 @@
 export const data = [
   {
     name: "Mercury",
+    href: "/mercury/overview",
     color: "bg-dots-mercury",
     overview: {
       content:
@@ -30,6 +31,7 @@ export const data = [
   },
   {
     name: "Venus",
+    href: "/venus/overview",
     color: "bg-dots-venus",
     overview: {
       content:
@@ -58,6 +60,7 @@ export const data = [
   },
   {
     name: "Earth",
+    href: "/earth/overview",
     color: "bg-dots-earth",
     overview: {
       content:
@@ -86,6 +89,7 @@ export const data = [
   },
   {
     name: "Mars",
+    href: "/mars/overview",
     color: "bg-dots-mars",
     overview: {
       content:
@@ -114,6 +118,7 @@ export const data = [
   },
   {
     name: "Jupiter",
+    href: "/jupiter/overview",
     color: "bg-dots-jupiter",
     overview: {
       content:
@@ -143,6 +148,7 @@ export const data = [
   },
   {
     name: "Saturn",
+    href: "/saturn/overview",
     color: "bg-dots-saturn",
     overview: {
       content:
@@ -171,6 +177,7 @@ export const data = [
   },
   {
     name: "Uranus",
+    href: "/uranus/overview",
     color: "bg-dots-uranus",
     overview: {
       content:
@@ -199,6 +206,7 @@ export const data = [
   },
   {
     name: "Neptune",
+    href: "/neptune/overview",
     color: "bg-dots-neptune",
     overview: {
       content:
