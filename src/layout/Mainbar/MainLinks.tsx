@@ -5,7 +5,7 @@ import Link from "next/link";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { Url } from "next/dist/shared/lib/router/router";
 import clsx from "clsx";
-
+import { data } from "@/data/data";
 type MainLinksProps = { planetName: string };
 
 const links = [
@@ -20,25 +20,28 @@ const links = [
 const MainLink = ({
   href,
   children,
-  dotColor,
+  borderColor,
   planetName,
   ...props
 }: {
   href: Url;
   children: React.ReactNode;
-  dotColor: string;
+  borderColor: string;
   planetName: string;
 }) => {
   const pathname = usePathname();
-  const isActive = pathname === href;
-
+  const isActive = pathname.includes(href.toString());
   return (
-    <NavigationMenu.Item className="border-b-[4px] border-100">
+    <NavigationMenu.Item
+      className={clsx(`${borderColor}`, {
+        "border-b-[4px]": isActive,
+      })}
+    >
       <Link href={`/${planetName}/${href}`} passHref legacyBehavior>
         <NavigationMenu.Link
           active={isActive}
           {...props}
-          className="flex items-center uppercase font-spartan text-H3Tablet py-5 sm:py-0"
+          className="flex items-center uppercase font-spartan text-H3Tablet pb-4 sm:py-0"
         >
           {children}
         </NavigationMenu.Link>
@@ -48,17 +51,15 @@ const MainLink = ({
 };
 
 const MainLinks: React.FC<MainLinksProps> = ({ planetName }) => {
-  const pathname = usePathname();
   return (
     <NavigationMenu.Root>
-      {pathname}
-      <NavigationMenu.List className="flex justify-evenly">
+      <NavigationMenu.List className="flex justify-between px-6">
         {links.map((item) => (
           <MainLink
             href={item.href}
             key={item.name}
             planetName={planetName}
-            dotColor={"item.color"}
+            borderColor={`border-b-dots-${planetName}`}
           >
             {item.name}
           </MainLink>

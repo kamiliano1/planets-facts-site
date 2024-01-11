@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           />
         </div>
 
-        <span className="border-b-[1px] border-opacity-10 my-4 border-FFFFF block sm:hidden"></span>
+        <span className="border-b-[1px] border-opacity-10 mt-4 mb-5 border-FFFFF block sm:hidden"></span>
         <NavLinks
           isNavbarOpen={isNavbarOpen}
           setIsNavbarOpen={setIsNavbarOpen}
