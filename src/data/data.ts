@@ -1,9 +1,26 @@
-export const data = [
+export type DataType = {
+  name: string;
+  href: string;
+  color: string;
+  border: string;
+  background: string;
+  overview: { content: string; source: string };
+  structure: { content: string; source: string };
+  geology: { content: string; source: string };
+  rotation: string;
+  revolution: string;
+  radius: string;
+  temperature: string;
+  images: { planet: string; internal: string; geology: string };
+};
+
+export const data: DataType[] = [
   {
     name: "Mercury",
     href: "/mercury/overview",
     color: "bg-dots-mercury",
-    border: "border-b-dots-mercury",
+    border: "border-419EBB",
+    background: "sm:bg-419EBB",
     overview: {
       content:
         "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
@@ -25,16 +42,17 @@ export const data = [
     radius: "2,439.7 KM",
     temperature: "430°c",
     images: {
-      planet: "./assets/planet-mercury.svg",
-      internal: "./assets/planet-mercury-internal.svg",
-      geology: "./assets/geology-mercury.png",
+      planet: "/assets/planet-mercury.svg",
+      internal: "/assets/planet-mercury-internal.svg",
+      geology: "/assets/geology-mercury.png",
     },
   },
   {
     name: "Venus",
     href: "/venus/overview",
     color: "bg-dots-venus",
-    border: "border-b-dots-venus",
+    border: "border-EDA249",
+    background: "sm:bg-EDA249",
     overview: {
       content:
         "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
@@ -55,16 +73,18 @@ export const data = [
     radius: "6,051.8 KM",
     temperature: "471°c",
     images: {
-      planet: "./assets/planet-venus.svg",
-      internal: "./assets/planet-venus-internal.svg",
-      geology: "./assets/geology-venus.png",
+      planet: "/assets/planet-venus.svg",
+      internal: "/assets/planet-venus-internal.svg",
+      geology: "/assets/geology-venus.png",
     },
   },
   {
     name: "Earth",
     href: "/earth/overview",
     color: "bg-dots-earth",
-    border: "border-b-dots-earth",
+    border: "border-6F2ED6",
+    background: "sm:bg-6F2ED6",
+
     overview: {
       content:
         "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
@@ -85,16 +105,17 @@ export const data = [
     radius: "6,371 KM",
     temperature: "16°c",
     images: {
-      planet: "./assets/planet-earth.svg",
-      internal: "./assets/planet-earth-internal.svg",
-      geology: "./assets/geology-earth.png",
+      planet: "/assets/planet-earth.svg",
+      internal: "/assets/planet-earth-internal.svg",
+      geology: "/assets/geology-earth.png",
     },
   },
   {
     name: "Mars",
     href: "/mars/overview",
     color: "bg-dots-mars",
-    border: "border-b-dots-mars",
+    border: "border-D14C32",
+    background: "sm:bg-D14C32",
     overview: {
       content:
         'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".',
@@ -115,16 +136,17 @@ export const data = [
     radius: "3,389.5 KM",
     temperature: "-28°c",
     images: {
-      planet: "./assets/planet-mars.svg",
-      internal: "./assets/planet-mars-internal.svg",
-      geology: "./assets/geology-mars.png",
+      planet: "/assets/planet-mars.svg",
+      internal: "/assets/planet-mars-internal.svg",
+      geology: "/assets/geology-mars.png",
     },
   },
   {
     name: "Jupiter",
     href: "/jupiter/overview",
     color: "bg-dots-jupiter",
-    border: "border-b-dots-jupiter",
+    border: "border-D83A34",
+    background: "sm:bg-D83A34",
     overview: {
       content:
         "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.",
@@ -146,16 +168,17 @@ export const data = [
     radius: "69,911 KM",
     temperature: "-108°c",
     images: {
-      planet: "./assets/planet-jupiter.svg",
-      internal: "./assets/planet-jupiter-internal.svg",
-      geology: "./assets/geology-jupiter.png",
+      planet: "/assets/planet-jupiter.svg",
+      internal: "/assets/planet-jupiter-internal.svg",
+      geology: "/assets/geology-jupiter.png",
     },
   },
   {
     name: "Saturn",
     href: "/saturn/overview",
     color: "bg-dots-saturn",
-    border: "border-b-dots-saturn",
+    border: "border-CD5120",
+    background: "sm:bg-CD5120",
     overview: {
       content:
         "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.",
@@ -176,16 +199,17 @@ export const data = [
     radius: "58,232 KM",
     temperature: "-138°c",
     images: {
-      planet: "./assets/planet-saturn.svg",
-      internal: "./assets/planet-saturn-internal.svg",
-      geology: "./assets/geology-saturn.png",
+      planet: "/assets/planet-saturn.svg",
+      internal: "/assets/planet-saturn-internal.svg",
+      geology: "/assets/geology-saturn.png",
     },
   },
   {
     name: "Uranus",
     href: "/uranus/overview",
     color: "bg-dots-uranus",
-    border: "border-b-dots-uranus",
+    border: "border-1EC2A4",
+    background: "sm:bg-1EC2A4",
     overview: {
       content:
         "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
@@ -206,16 +230,17 @@ export const data = [
     radius: "25,362 KM",
     temperature: "-195°c",
     images: {
-      planet: "./assets/planet-uranus.svg",
-      internal: "./assets/planet-uranus-internal.svg",
-      geology: "./assets/geology-uranus.png",
+      planet: "/assets/planet-uranus.svg",
+      internal: "/assets/planet-uranus-internal.svg",
+      geology: "/assets/geology-uranus.png",
     },
   },
   {
     name: "Neptune",
     href: "/neptune/overview",
     color: "bg-dots-neptune",
-    border: "border-b-dots-neptune",
+    border: "border-2D68F0",
+    background: "sm:bg-2D68F0",
     overview: {
       content:
         "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.",
@@ -236,9 +261,9 @@ export const data = [
     radius: "24,622 KM",
     temperature: "-201°c",
     images: {
-      planet: "./assets/planet-neptune.svg",
-      internal: "./assets/planet-neptune-internal.svg",
-      geology: "./assets/geology-neptune.png",
+      planet: "/assets/planet-neptune.svg",
+      internal: "/assets/planet-neptune-internal.svg",
+      geology: "/assets/geology-neptune.png",
     },
   },
 ];

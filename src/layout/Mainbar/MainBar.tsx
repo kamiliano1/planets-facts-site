@@ -1,12 +1,15 @@
 import React from "react";
 import MainLinks from "./MainLinks";
+import { DataType } from "@/data/data";
 
-type MainBarProps = { planetName: string };
+type MainBarProps = {
+  planetData: DataType;
+};
 
-const MainBar: React.FC<MainBarProps> = ({ planetName }) => {
+const MainBar: React.FC<MainBarProps> = ({ planetData }) => {
   return (
-    <nav>
-      <MainLinks planetName={planetName} />
+    <nav className="">
+      <MainLinks planetData={planetData} />
     </nav>
   );
 };

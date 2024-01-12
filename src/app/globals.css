@@ -6,6 +6,10 @@ html {
   @apply bg-070724;
 }
 
+h1 {
+  @apply text-H1Mobile sm:text-H1Tablet lg:text-H1Desktop;
+}
+
 h1,
 h2 {
   @apply font-antonio uppercase;
