@@ -39,6 +39,7 @@ const config: Config = {
       CD5120: "hsl(17, 73%, 46%)",
       "1EC2A4": "hsl(169, 73%, 44%)",
       "2D68F0": "hsl(222, 87%, 56%)",
+      D8D8D8: "hsla(0, 0%, 85%, .2)",
     },
     fontSize: {
       H1Desktop: [

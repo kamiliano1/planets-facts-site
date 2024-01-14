@@ -8,7 +8,7 @@ type MainBarProps = {
 
 const MainBar: React.FC<MainBarProps> = ({ planetData }) => {
   return (
-    <nav className="">
+    <nav className="lg:col-start-2">
       <MainLinks planetData={planetData} />
     </nav>
   );
