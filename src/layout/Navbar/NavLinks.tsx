@@ -25,11 +25,13 @@ const NavLink = ({
   setIsNavbarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const pathname = usePathname();
-  const isActive = pathname === href;
-
+  const isActive =
+    pathname.split("/")[1].toLocaleLowerCase() ===
+    href.toString().split("/")[1];
+  const activatedPage = pathname.split("/")[2];
   return (
     <NavigationMenu.Item className="[&:not(:last-child)]:border-b-[1px] border-opacity-10 border-FFFFF sm:border-none">
-      <Link href={href} passHref legacyBehavior>
+      <Link href={`/${href}/${activatedPage}`} passHref legacyBehavior>
         <NavigationMenu.Link
           onClick={() => setIsNavbarOpen(false)}
           active={isActive}
@@ -53,7 +55,7 @@ const NavLinks: React.FC<NavLinksProps> = ({
   return (
     <NavigationMenu.Root
       className={clsx(
-        `duration-500 sm:translate-x-0 lg:ml-auto fixed sm:static w-full sm:w-auto z-[50] bg-070724`,
+        `duration-500 sm:translate-x-0 lg:ml-auto fixed sm:static w-full sm:w-auto z-[50] bg-070724 h-full`,
         {
           "translate-x-full": !isNavbarOpen,
         }
@@ -63,7 +65,7 @@ const NavLinks: React.FC<NavLinksProps> = ({
         {data.map((item) => (
           <NavLink
             setIsNavbarOpen={setIsNavbarOpen}
-            href={item.href}
+            href={item.name.toLocaleLowerCase()}
             key={item.name}
             dotColor={item.color}
           >

@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        backgroundStars: "url('/assets/background-stars.svg')",
+      },
       fontFamily: {
         antonio: ["var(--font-antonio)"],
         spartan: ["var(--font-spartan)"],

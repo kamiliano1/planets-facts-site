@@ -20,3 +20,28 @@ h4,
 p {
   @apply font-spartan;
 }
+
+.mercury-image-size {
+  @apply w-[111px] sm:w-[184px] lg:w-[290px];
+}
+.venus-image-size {
+  @apply w-[154px] sm:w-[253px] lg:w-[400px];
+}
+.earth-image-size {
+  @apply w-[173px] sm:w-[285px] lg:w-[450px];
+}
+.mars-image-size {
+  @apply w-[129px] sm:w-[213px] lg:w-[336px];
+}
+.jupiter-image-size {
+  @apply w-[224px] sm:w-[369px] lg:w-[582px];
+}
+.saturn-image-size {
+  @apply w-[256px] sm:w-[422px] lg:w-[666px];
+}
+.uranus-image-size {
+  @apply w-[176px] sm:w-[290px] lg:w-[458px];
+}
+.neptune-image-size {
+  @apply w-[173px] sm:w-[285px] lg:w-[450px];
+}

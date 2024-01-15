@@ -7,24 +7,27 @@ export default function Page({ params }: { params: { planets: string } }) {
   const planetData = fetchData(planetName);
   return (
     <>
-      <div className="relative mx-auto my-24 flex justify-center sm:my-36 sm:row-start-1 sm:col-span-2 lg:col-span-1 lg:my-0">
+      <div
+        className={`my-24 sm:my-36 sm:row-start-1 sm:col-span-2 lg:col-span-1 lg:my-0 aspect-square lg:row-start-1 lg:row-span-2 ${planetData?.planetImageSize} m-auto relative flex justify-center`}
+      >
         <Image
-          width={111}
-          height={111}
+          fill
           src={planetData ? planetData?.images.planet : ""}
           alt={`${planetData?.name} planet`}
         />
         <Image
-          className="absolute top-[80px]"
-          width={70}
-          height={70}
+          className="absolute top-[calc(100%_-_30%)]"
+          width={158}
+          height={158}
           src={planetData ? planetData?.images.geology : ""}
           alt={`${planetData?.name} planet`}
         />
       </div>
       <div className="text-center sm:text-start sm:px-0 px-6 sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-1">
         <h1 className="mb-4 lg:mb-6 lg:mt-32">{planetData?.name}</h1>
-        <p className="text-BodyTablet mb-8">{planetData?.overview.content}</p>
+        <p className="text-BodyTablet sm:text-BodyDesktop mb-8">
+          {planetData?.overview.content}
+        </p>
         <Link
           className="text-H3Desktop font-normal tracking-normal opacity-50 font-spartan flex items-center justify-center sm:justify-start mb-7"
           href={planetData ? planetData?.geology.source : ""}
