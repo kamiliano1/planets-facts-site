@@ -140,7 +140,7 @@ const config: Config = {
         },
       ],
       BodyTablet: [
-        ".6875rem",
+        ".75rem",
         {
           fontWeight: "400",
           lineHeight: "1.375rem",

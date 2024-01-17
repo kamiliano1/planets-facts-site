@@ -28,7 +28,7 @@ const NavLink = ({
   const isActive =
     pathname.split("/")[1].toLocaleLowerCase() ===
     href.toString().split("/")[1];
-  const activatedPage = pathname.split("/")[2];
+  const activatedPage = pathname.split("/")[2] || "overview";
   return (
     <NavigationMenu.Item className="[&:not(:last-child)]:border-b-[1px] border-opacity-10 border-FFFFF sm:border-none">
       <Link href={`/${href}/${activatedPage}`} passHref legacyBehavior>

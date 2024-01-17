@@ -35,7 +35,9 @@ const MainLink = ({
   planetName: string;
   number: number;
 }) => {
-  const pathname = usePathname();
+  const activePathname = usePathname();
+  const pathname = activePathname.length < 2 ? "/overview" : activePathname;
+
   const isActive = pathname.includes(href.toString());
   return (
     <NavigationMenu.Item

@@ -1,6 +1,6 @@
 import React from "react";
-import MainLinks from "./MainLinks";
 import { DataType } from "@/data/data";
+import MainLinks from "./MainLinks";
 
 type MainBarProps = {
   planetData: DataType;
