@@ -1,6 +1,5 @@
 import MainBar from "@/layout/Mainbar/MainBar";
 import React from "react";
-import { data } from "@/data/data";
 import fetchData from "../utils/fetchData";
 export default function Layout({
   children,
@@ -12,7 +11,7 @@ export default function Layout({
   const planetName = params.planets;
   const planetData = fetchData(planetName);
   return (
-    <main className="sm:grid sm:grid-cols-2 lg:grid-cols-[minmax(0,_1fr)_350px sm:items-center sm:px-10 lg:max-w-[1110px] lg:mx-auto lg:gap-x-24">
+    <main className="sm:grid sm:grid-cols-2 lg:grid-cols-[minmax(0,_1fr)_350px] sm:items-center sm:px-10 lg:max-w-[1110px] lg:mx-auto lg:gap-x-24 ">
       <MainBar planetData={planetData!} />
       <span className="block border-b-[1px] border-opacity-10 border-FFFFF sm:hidden"></span>
       {children}

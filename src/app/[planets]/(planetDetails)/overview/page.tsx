@@ -22,7 +22,7 @@ export default function Page({ params }: { params: { planets: string } }) {
           {planetData?.overview.content}
         </p>
         <Link
-          className="text-H3Desktop font-normal tracking-normal opacity-50 font-spartan flex items-center justify-center sm:justify-start mb-7"
+          className="text-H3Desktop lg:text-BodyDesktop font-normal tracking-normal opacity-50 font-spartan flex items-center justify-center sm:justify-start mb-7"
           href={planetData ? planetData?.overview.source : ""}
         >
           Source: <span className="underline font-bold mx-1"> Wikipedia</span>

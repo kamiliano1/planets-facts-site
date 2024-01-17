@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { planets: string } }) {
       <div className="text-center sm:text-start sm:px-0 px-6 sm:col-start-1 sm:row-start-2 lg:col-start-2 lg:row-start-1">
         <h1 className="mb-4 lg:mb-6 lg:mt-32">{planetData?.name}</h1>
         <p className="text-BodyTablet sm:text-BodyDesktop mb-8">
-          {planetData?.overview.content}
+          {planetData?.structure.content}
         </p>
         <Link
           className="text-H3Desktop font-normal tracking-normal opacity-50 font-spartan flex items-center justify-center sm:justify-start mb-7"
