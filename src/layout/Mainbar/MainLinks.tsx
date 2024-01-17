@@ -48,7 +48,11 @@ const MainLink = ({
         }
       )}
     >
-      <Link href={`/${planetName}/${href}`} passHref legacyBehavior>
+      <Link
+        href={`/${planetName.toLocaleLowerCase()}${href}`}
+        passHref
+        legacyBehavior
+      >
         <NavigationMenu.Link
           active={isActive}
           {...props}
