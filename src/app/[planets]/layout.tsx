@@ -2,7 +2,7 @@ import React from "react";
 import fetchData from "../utils/fetchData";
 import PlanetTimeDetails from "@/layout/PlanetTimeDetails";
 import type { Metadata } from "next";
-import Bar from "@/layout/Bar/Bar";
+import Bar from "@/layout/MainBar/MainBar";
 
 export async function generateMetadata({
   params,

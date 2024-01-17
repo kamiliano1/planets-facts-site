@@ -6,9 +6,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { Url } from "next/dist/shared/lib/router/router";
 import clsx from "clsx";
 import { DataType } from "@/data/data";
-type MainLinksProps = {
-  planetData: DataType;
-};
+
 const links = [
   { name: "Overview", href: "/overview" },
   {
@@ -67,7 +65,7 @@ const BarLink = ({
   );
 };
 
-export default function BarLinks({ planetData }: { planetData: DataType }) {
+export default function MainBarLinks({ planetData }: { planetData: DataType }) {
   return (
     <NavigationMenu.Root>
       <NavigationMenu.List className="flex justify-between px-6 sm:px-0 sm:pl-16 lg:p-0 sm:flex-col sm:gap-4 lg:mb-20">

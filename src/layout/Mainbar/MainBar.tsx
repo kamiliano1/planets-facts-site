@@ -1,16 +1,10 @@
-import React from "react";
 import { DataType } from "@/data/data";
-import MainLinks from "./MainLinks";
+import MainBarLinks from "./MainBarLinks";
 
-type MainBarProps = {
-  planetData: DataType;
-};
-
-const MainBar: React.FC<MainBarProps> = ({ planetData }) => {
+export default function MainBar({ planetData }: { planetData: DataType }) {
   return (
     <nav className="lg:col-start-2">
-      <MainLinks planetData={planetData} />
+      <MainBarLinks planetData={planetData} />
     </nav>
   );
-};
-export default MainBar;
+}

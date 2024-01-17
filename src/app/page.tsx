@@ -2,7 +2,7 @@ import Image from "next/image";
 import fetchData from "@/app/utils/fetchData";
 import Link from "next/link";
 import PlanetTimeDetails from "@/layout/PlanetTimeDetails";
-import Bar from "@/layout/Bar/Bar";
+import Bar from "@/layout/MainBar/MainBar";
 export default function Home() {
   const planetData = fetchData("mercury");
   return (
