@@ -1,8 +1,8 @@
-import MainBar from "@/layout/MainBar/MainBar";
 import React from "react";
 import fetchData from "../utils/fetchData";
 import PlanetTimeDetails from "@/layout/PlanetTimeDetails";
 import type { Metadata } from "next";
+import MainBar from "@/layout/MainBar/MainBar";
 
 export async function generateMetadata({
   params,
