@@ -2,7 +2,7 @@ import React from "react";
 import fetchData from "../utils/fetchData";
 import PlanetTimeDetails from "@/layout/PlanetTimeDetails";
 import type { Metadata } from "next";
-import MainBar from "./../../layout/MainBar/MainBar";
+import Bar from "@/layout/Bar/Bar";
 
 export async function generateMetadata({
   params,
@@ -26,7 +26,7 @@ export default function Layout({
 
   return (
     <main className="sm:grid sm:grid-cols-2 lg:grid-cols-[minmax(0,_1fr)_350px] sm:items-center sm:px-10 lg:max-w-[1110px] lg:mx-auto lg:gap-x-24 ">
-      <MainBar planetData={planetData!} />
+      <Bar planetData={planetData!} />
       <span className="block border-b-[1px] border-opacity-10 border-FFFFF sm:hidden"></span>
       {children}
       <PlanetTimeDetails planetData={planetData} />
