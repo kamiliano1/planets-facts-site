@@ -2,6 +2,7 @@ export type DataType = {
   name: string;
   color: string;
   border: string;
+  borderHover: string;
   background: string;
   planetImageSize: string;
   overview: { content: string; source: string };
@@ -19,6 +20,7 @@ export const data: DataType[] = [
     name: "Mercury",
     color: "bg-dots-mercury",
     border: "border-419EBB",
+    borderHover: "lg:hover:border-419EBB",
     background: "sm:bg-419EBB",
     planetImageSize: "mercury-image-size",
     overview: {
@@ -51,6 +53,7 @@ export const data: DataType[] = [
     name: "Venus",
     color: "bg-dots-venus",
     border: "border-EDA249",
+    borderHover: "lg:hover:border-EDA249",
     background: "sm:bg-EDA249",
     planetImageSize: "venus-image-size",
     overview: {
@@ -82,6 +85,7 @@ export const data: DataType[] = [
     name: "Earth",
     color: "bg-dots-earth",
     border: "border-6F2ED6",
+    borderHover: "lg:hover:border-6F2ED6",
     background: "sm:bg-6F2ED6",
     planetImageSize: "earth-image-size",
     overview: {
@@ -113,6 +117,7 @@ export const data: DataType[] = [
     name: "Mars",
     color: "bg-dots-mars",
     border: "border-D14C32",
+    borderHover: "lg:hover:border-D14C32",
     background: "sm:bg-D14C32",
     planetImageSize: "mars-image-size",
     overview: {
@@ -144,6 +149,7 @@ export const data: DataType[] = [
     name: "Jupiter",
     color: "bg-dots-jupiter",
     border: "border-D83A34",
+    borderHover: "lg:hover:border-D83A34",
     background: "sm:bg-D83A34",
     planetImageSize: "jupiter-image-size",
     overview: {
@@ -176,6 +182,7 @@ export const data: DataType[] = [
     name: "Saturn",
     color: "bg-dots-saturn",
     border: "border-CD5120",
+    borderHover: "lg:hover:border-CD5120",
     background: "sm:bg-CD5120",
     planetImageSize: "saturn-image-size",
     overview: {
@@ -207,6 +214,7 @@ export const data: DataType[] = [
     name: "Uranus",
     color: "bg-dots-uranus",
     border: "border-1EC2A4",
+    borderHover: "lg:hover:border-1EC2A4",
     background: "sm:bg-1EC2A4",
     planetImageSize: "uranus-image-size",
     overview: {
@@ -238,6 +246,7 @@ export const data: DataType[] = [
     name: "Neptune",
     color: "bg-dots-neptune",
     border: "border-2D68F0",
+    borderHover: "lg:hover:border-2D68F0",
     background: "sm:bg-2D68F0",
     planetImageSize: "neptune-image-size",
     overview: {
