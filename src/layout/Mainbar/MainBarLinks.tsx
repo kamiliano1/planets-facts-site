@@ -16,7 +16,7 @@ const links = [
   { name: "Surface", href: "/surface" },
 ];
 
-const BarLink = ({
+const MainBarLink = ({
   href,
   children,
   borderColor,
@@ -70,7 +70,7 @@ export default function MainBarLinks({ planetData }: { planetData: DataType }) {
     <NavigationMenu.Root>
       <NavigationMenu.List className="flex justify-between px-6 sm:px-0 sm:pl-16 lg:p-0 sm:flex-col sm:gap-4 lg:mb-20">
         {links.map((item, id) => (
-          <BarLink
+          <MainBarLink
             href={item.href}
             key={item.name}
             planetName={planetData.name}
@@ -79,7 +79,7 @@ export default function MainBarLinks({ planetData }: { planetData: DataType }) {
             number={id + 1}
           >
             {item.name}
-          </BarLink>
+          </MainBarLink>
         ))}
       </NavigationMenu.List>
     </NavigationMenu.Root>
