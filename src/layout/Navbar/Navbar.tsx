@@ -7,7 +7,7 @@ type NavbarProps = {};
 const Navbar: React.FC<NavbarProps> = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
-    <nav className="pt-4 sm:pt-10 lg:p-0 overflow-x-hidden">
+    <nav className="pt-4 sm:pt-8 lg:p-0 overflow-x-hidden">
       <div className="lg:flex lg:px-8 lg:py-4s lg:py-0">
         <div className="flex items-center justify-between sm:justify-center pl-6 pr-8 sm:p-0 sm:pb-10 lg:pb-0">
           <h2 className="text-NavTitle uppercase">The Planets</h2>

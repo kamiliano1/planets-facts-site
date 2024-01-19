@@ -8,12 +8,13 @@ import clsx from "clsx";
 import { DataType } from "@/data/data";
 
 const links = [
-  { name: "Overview", href: "/overview" },
+  { nameMobile: "Overview", nameTablet: "Overview", href: "/overview" },
   {
-    name: "Structure",
+    nameMobile: "Structure",
+    nameTablet: "Internal Structure",
     href: "/structure",
   },
-  { name: "Surface", href: "/surface" },
+  { nameMobile: "Surface", nameTablet: "Surface Geology", href: "/surface" },
 ];
 
 const MainBarLink = ({
@@ -39,9 +40,9 @@ const MainBarLink = ({
   return (
     <NavigationMenu.Item
       className={clsx(
-        `${borderColor} sm:px-5 py-2 lg:py-3 sm:border-[1px] sm:border-FFFFF sm:border-opacity-20`,
+        `${borderColor} sm:px-5 py-2 sm:py-[.7875rem] lg:py-3 sm:border-[1px] sm:border-FFFFF sm:border-opacity-20 text-FFFFF text-opacity-75 sm:text-opacity-100`,
         {
-          "border-b-[4px]": isActive,
+          "border-b-[4px] text-opacity-100": isActive,
           [backgroundColor]: isActive,
           "hover:bg-D8D8D8": !isActive,
         }
@@ -72,13 +73,14 @@ export default function MainBarLinks({ planetData }: { planetData: DataType }) {
         {links.map((item, id) => (
           <MainBarLink
             href={item.href}
-            key={item.name}
+            key={item.nameMobile}
             planetName={planetData.name}
             borderColor={planetData?.border}
             backgroundColor={planetData?.background}
             number={id + 1}
           >
-            {item.name}
+            <p className="sm:hidden">{item.nameMobile}</p>
+            <p className="hidden sm:block">{item.nameTablet}</p>
           </MainBarLink>
         ))}
       </NavigationMenu.List>

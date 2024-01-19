@@ -38,7 +38,7 @@ const NavLink = ({
           onClick={() => setIsNavbarOpen(false)}
           active={isActive}
           {...props}
-          className={`flex items-center uppercase font-spartan text-H4Mobile py-5 sm:py-0 lg:border-t-[5px] lg:border-opacity-0 lg:hover:border-opacity-100 ${borderHover} h-full lg:pt-8 lg:pb-7`}
+          className={`flex items-center uppercase font-spartan text-H4Mobile sm:text-H4Desktop py-5 sm:py-0 lg:border-t-[5px] lg:border-opacity-0 lg:hover:border-opacity-100 sm:text-opacity-75 sm:hover:text-opacity-100 text-FFFFF ${borderHover} h-full lg:pt-[1.8125rem] lg:pb-[1.7085rem]`}
         >
           <span
             className={`w-5 aspect-square rounded-full block mr-6 ${dotColor} sm:hidden`}
@@ -63,7 +63,7 @@ const NavLinks: React.FC<NavLinksProps> = ({
         }
       )}
     >
-      <NavigationMenu.List className="pl-6 pr-8 lg:p-0 sm:flex sm:justify-evenly lg:gap-8">
+      <NavigationMenu.List className="pl-6 pr-8 lg:p-0 sm:flex sm:justify-evenly lg:gap-[2.0625rem]">
         {data.map((item) => (
           <NavLink
             setIsNavbarOpen={setIsNavbarOpen}
