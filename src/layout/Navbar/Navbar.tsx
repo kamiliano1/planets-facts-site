@@ -7,7 +7,7 @@ type NavbarProps = {};
 const Navbar: React.FC<NavbarProps> = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
-    <nav className="pt-4 sm:pt-8 lg:p-0 overflow-x-hidden">
+    <div className="pt-4 sm:pt-8 lg:p-0 overflow-x-hidden">
       <div className="lg:flex lg:pr-10 lg:px-8 lg:py-0">
         <div className="flex items-center justify-between sm:justify-center pl-6 pr-8 sm:p-0 sm:pb-10 lg:pb-0">
           <h2 className="text-NavTitle uppercase font-antonio">The Planets</h2>
@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         />
       </div>
       <span className="hidden border-b-[1px] border-opacity-20 my-7 lg:my-0 border-FFFFF sm:block"></span>
-    </nav>
+    </div>
   );
 };
 export default Navbar;

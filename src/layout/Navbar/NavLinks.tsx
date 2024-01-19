@@ -56,6 +56,7 @@ const NavLinks: React.FC<NavLinksProps> = ({
 }) => {
   return (
     <NavigationMenu.Root
+      aria-label="navbar"
       className={clsx(
         `duration-500 sm:translate-x-0 lg:ml-auto fixed sm:static w-full sm:w-auto z-[50] bg-070724 h-full`,
         {

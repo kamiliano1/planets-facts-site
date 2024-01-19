@@ -58,7 +58,9 @@ const MainBarLink = ({
           {...props}
           className="flex items-center uppercase font-spartan text-H3Tablet lg:text-H3Desktop pb-4 sm:py-0 lg:pb-0"
         >
-          <span className="hidden sm:block opacity-50 mr-4">0{number}</span>{" "}
+          <span className="hidden sm:block opacity-50 mr-4 lg:mr-[1.5625rem]">
+            0{number}
+          </span>{" "}
           {children}
         </NavigationMenu.Link>
       </Link>
@@ -68,7 +70,7 @@ const MainBarLink = ({
 
 export default function MainBarLinks({ planetData }: { planetData: DataType }) {
   return (
-    <NavigationMenu.Root>
+    <NavigationMenu.Root aria-label="mainBar">
       <NavigationMenu.List className="flex justify-between px-6 sm:px-0 sm:pl-16 lg:p-0 sm:flex-col sm:gap-4 lg:mb-[4.5rem]">
         {links.map((item, id) => (
           <MainBarLink

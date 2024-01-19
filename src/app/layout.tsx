@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     template: "Frontend Mentor | Planets fact site | %s",
     default: "Frontend Mentor | Planets fact site | Mercury",
   },
+  description: "Frontend Mentor challenge",
 };
 
 export default function RootLayout({

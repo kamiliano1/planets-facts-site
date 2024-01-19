@@ -3,8 +3,8 @@ import MainBarLinks from "./MainBarLinks";
 
 export default function MainBar({ planetData }: { planetData: DataType }) {
   return (
-    <nav className="lg:col-start-2">
+    <div className="lg:col-start-2">
       <MainBarLinks planetData={planetData} />
-    </nav>
+    </div>
   );
 }
