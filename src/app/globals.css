@@ -37,7 +37,7 @@ p {
   @apply w-[224px] sm:w-[369px] lg:w-[582px];
 }
 .saturn-image-size {
-  @apply w-[256px] sm:w-[422px] lg:w-[666px];
+  @apply w-[256px] sm:w-[422px] lg:w-[600px] xl:w-[666px];
 }
 .uranus-image-size {
   @apply w-[176px] sm:w-[290px] lg:w-[458px];
