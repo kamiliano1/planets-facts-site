@@ -69,7 +69,7 @@ const MainBarLink = ({
 export default function MainBarLinks({ planetData }: { planetData: DataType }) {
   return (
     <NavigationMenu.Root>
-      <NavigationMenu.List className="flex justify-between px-6 sm:px-0 sm:pl-16 lg:p-0 sm:flex-col sm:gap-4 lg:mb-20">
+      <NavigationMenu.List className="flex justify-between px-6 sm:px-0 sm:pl-16 lg:p-0 sm:flex-col sm:gap-4 lg:mb-[4.5rem]">
         {links.map((item, id) => (
           <MainBarLink
             href={item.href}
