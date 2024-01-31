@@ -61,4 +61,4 @@ To improve accessibility:
 
 - Website - [Kamil Szymon](https://github.com/kamiliano1)
 - Frontend Mentor - [@kamiliano1](https://www.frontendmentor.io/profile/kamiliano1)
-- Twitter - [@Kamil9821030111](https://twitter.com/Kamil9821030111)
+- Twitter - [@Kamil9821030111](https://twitter.com/k_p_szymon)
